@@ -8,7 +8,8 @@ const UserSchema = new Schema({
   pass: {
     type: String,
     require:[true, "name is required"],
-  }
+  },
+  role: String
 });
 
 const UserModel = model("User", UserSchema);
